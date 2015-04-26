@@ -736,7 +736,7 @@ public class ClientXML {
                 String diplom = schools.get(i).getText(); i++;
                 String year = schools.get(i).getText();
                 if (!name.equals("") && !diplom.equals("") && !year.equals("")) {
-                    Formation sc = new Formation(name, diplom, year);
+                    Formation sc = new Formation(year, name, diplom);
                     sm.addFormation(sc);
                 } else if (name.equals("") && diplom.equals("") && year.equals("")) {
                 } else {
