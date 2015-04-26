@@ -39,7 +39,8 @@ public class ClientXML {
     private static final int FRAME_WIDTH = 420;
     private static final int FRAME_HEIGHT = 800;
 
-    private static final String url ="http://localhost:8080/SpringMVC/rest/resume/";
+    //private static final String url ="http://localhost:8080/SpringMVC/rest/resume/";
+    private static final String url ="http://lw2xml-m1gil15.rhcloud.com/SpringMVC/rest/resume/";
     private JFrame frame;
     private JTextPane textArea;
     private JScrollPane scroll;
