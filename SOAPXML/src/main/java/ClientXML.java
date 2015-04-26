@@ -646,6 +646,16 @@ public class ClientXML {
                 doc.insertString(doc.getLength(), "ANNEE ", sousCategory);
                 doc.insertString(doc.getLength(), exp.item(j).getChildNodes().item(0).getTextContent() + "\n", text);
             }
+            
+            NodeList lang = nodeList.item(3).getChildNodes();
+            doc.insertString(doc.getLength(), "\nLANGUE\n", category);
+            for (int j = 0; j < lang.getLength(); j++) {
+                doc.insertString(doc.getLength(), "\nLANGUE ", sousCategory);
+                doc.insertString(doc.getLength(), lang.item(j).getChildNodes().item(1).getTextContent() + "\n", text);
+                doc.insertString(doc.getLength(), "NIVEAU ", sousCategory);
+                doc.insertString(doc.getLength(), lang.item(j).getChildNodes().item(0).getTextContent() + "\n", text);
+
+            }
 
 
         }
